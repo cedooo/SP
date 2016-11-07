@@ -7,6 +7,7 @@ package com.dhcc.ywp.service;
 public interface HelloXXXService {
     /**
      * say hello to caller
+     *
      * @param name caller's name
      * @return the hello, XXX
      */

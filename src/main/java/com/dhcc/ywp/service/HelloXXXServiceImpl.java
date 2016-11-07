@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloXXXServiceImpl implements HelloXXXService {
 
-    public String hello(String name){
-        return "Hello, " + (name==null?"---":name);
+    public String hello(String name) {
+        return "Hello, " + (name == null ? "---" : name);
     }
 
 }

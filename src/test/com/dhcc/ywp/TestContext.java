@@ -16,7 +16,7 @@ public class TestContext {
             new AnnotationConfigApplicationContext(HelloXXXConfig.class);
 
     static public ApplicationContext helloXXXContextByXml = new ClassPathXmlApplicationContext(
-            new String[] {"applicationContext.xml"}
+            new String[]{"helloContext.xml"}
     );
 
 }
