@@ -9,6 +9,9 @@
 
 
     <!-- more bean definitions for data access objects go here -->
+    <context:component-scan base-package="com.dhcc.ywp" >
+        <context:exclude-filter type="regex" expression=".*Config" ></context:exclude-filter>
+    </context:component-scan>
 
 
 </beans>

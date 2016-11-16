@@ -1,5 +1,6 @@
 package com.dhcc.ywp.service;
 
+import static java.lang.System.out;
 import static com.dhcc.ywp.TestContext.helloXXXContextByAnnotation;
 import static com.dhcc.ywp.TestContext.helloXXXContextByXml;
 
@@ -15,9 +16,11 @@ public class HelloXXXServiceImplTest {
 
     @Test
     public void testHello() {
-        System.out.println(
-                helloXXXContextByAnnotation.getBean(HelloXXXService.class).hello("cedo")
-        );
+        System.out.println(helloXXXContextByAnnotation.getBean(HelloXXXService.class).hello("cedo"));
+        /**
+         * with qualifiler
+         */
+        //out.println(((HelloXXXServiceImpl)(helloXXXContextByAnnotation.getBean("main"))).hello("cedo"));
     }
 
     @Test
@@ -25,5 +28,7 @@ public class HelloXXXServiceImplTest {
         System.out.println(
                 helloXXXContextByXml.getBean(HelloXXXService.class).hello("cd")
         );
+
+        //System.out.println(helloXXXContextByXml.getStartupDate());
     }
 }
