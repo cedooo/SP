@@ -19,10 +19,10 @@ public class HelloWorldController {
 
     private HelloXXXService helloService;
     @Autowired
-    public void HelloWorldController(@Qualifier("main") HelloXXXService serivce){
+    public void HelloWorldController(@Qualifier("helloService") HelloXXXService serivce){
         helloService = serivce;
     }
-    @RequestMapping("/helloWorld/{name}")
+    @RequestMapping("/helloWorld/{name}")    //handler methods
     public String helloWorld(Model model, @PathVariable String name) {
         String message = helloService.hello(name);
         model.addAttribute("message", message);

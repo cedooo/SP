@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by cedo on 2016/11/7.
  * hello Serivce implements
  */
-@Component("main")
+@Component("helloService")
 public class HelloXXXServiceImpl implements HelloXXXService {
 
     public String hello(String name) {
