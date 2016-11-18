@@ -1,6 +1,6 @@
 package com.dhcc.ywp.controller;
 
-import com.dhcc.ywp.service.HelloXXXService;
+import com.dhcc.ywp.service.hello.HelloXXXService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

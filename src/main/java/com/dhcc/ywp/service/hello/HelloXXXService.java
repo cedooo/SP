@@ -1,8 +1,8 @@
-package com.dhcc.ywp.service;
+package com.dhcc.ywp.service.hello;
 
 /**
  * Created by cedo on 2016/11/7.
- * hello service
+ * hello service 接口
  */
 public interface HelloXXXService {
     /**

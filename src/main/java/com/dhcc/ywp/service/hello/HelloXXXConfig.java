@@ -1,9 +1,6 @@
-package com.dhcc.ywp.service;
+package com.dhcc.ywp.service.hello;
 
-import com.dhcc.ywp.service.HelloXXXService;
-import com.dhcc.ywp.service.HelloXXXServiceImpl;
 import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Service;
 
 /**
  * Created by cedo on 2016/11/7.

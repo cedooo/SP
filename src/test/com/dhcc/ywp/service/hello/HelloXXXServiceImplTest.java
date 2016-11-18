@@ -1,14 +1,14 @@
-package com.dhcc.ywp.service;
+package com.dhcc.ywp.service.hello;
 
-import static java.lang.System.out;
 import static com.dhcc.ywp.TestContext.helloXXXContextByAnnotation;
 import static com.dhcc.ywp.TestContext.helloXXXContextByXml;
 
+import com.dhcc.ywp.service.hello.HelloXXXService;
 import org.junit.Test;
 
 /**
  * Created by cedo on 2016/11/7.
- * test com.dhcc.ywp.service.HelloXXXServiceImpl
+ * test com.dhcc.ywp.service.hello.HelloXXXServiceImpl
  */
 public class HelloXXXServiceImplTest {
 

@@ -1,16 +1,12 @@
-package com.dhcc.ywp.service;
+package com.dhcc.ywp.service.hello;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.cglib.proxy.Dispatcher;
+import com.dhcc.ywp.service.hello.HelloXXXService;
 import org.springframework.stereotype.Component;
-import org.springframework.web.servlet.DispatcherServlet;
-
-import javax.servlet.ServletException;
-import java.io.IOException;
 
 /**
  * Created by cedo on 2016/11/7.
  * hello Serivce implements
+ * helloService标准实现
  */
 @Component("helloService")
 public class HelloXXXServiceImpl implements HelloXXXService {
