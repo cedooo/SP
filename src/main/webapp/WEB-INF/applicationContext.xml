@@ -21,7 +21,8 @@
 
     <beans profile="dev">
         <jdbc:embedded-database id="dataSource" type="HSQL">
-            <jdbc:script location="classpath:world_dbbak_all_mysql.sql"/>
+            <jdbc:script location="classpath:world_schema.sql"/>
+            <jdbc:script location="classpath:world_data.sql"/>
         </jdbc:embedded-database>
     </beans>
 
