@@ -12,7 +12,9 @@
 
     <context:annotation-config/>
 
-    <context:component-scan base-package="com.dhcc.ywp.service"/>
+    <context:component-scan base-package="com.dhcc.ywp.service">
+        <context:exclude-filter type="regex" expression="WorldCountryServiceImpl"></context:exclude-filter>
+    </context:component-scan>
     <!-- <bean class="com.dhcc.ywp.service.hello.impl.HelloXXXServiceImpl" />-->
 
 </beans>

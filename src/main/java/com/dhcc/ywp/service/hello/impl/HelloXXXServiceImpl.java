@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * hello Serivce implements
  * helloService标准实现
  */
-@Component("helloService")
+@Component
 public class HelloXXXServiceImpl implements HelloXXXService {
 
     public String hello(String name) {

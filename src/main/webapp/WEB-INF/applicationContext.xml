@@ -8,10 +8,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
-        http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+        http://www.springframework.org/schema/jdbc
+        http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
         http://www.springframework.org/schema/jee
-        http://www.springframework.org/schema/jee/spring-jee-3.2.xsd">
-
+        http://www.springframework.org/schema/jee/spring-jee.xsd">
 
     <!-- more bean definitions for data access objects go here -->
     <context:component-scan base-package="com.dhcc.ywp">
@@ -30,10 +30,7 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <!-- 自动扫描me/gacl/mapping/目录下的所有SQL映射的xml文件, 省掉Configuration.xml里的手工配置
-            value="classpath:me/gacl/mapping/*.xml"指的是classpath(类路径)下me.gacl.mapping包中的所有xml文件
-            UserMapper.xml位于me.gacl.mapping包下，这样UserMapper.xml就可以被自动扫描
-             -->
+        <!-- 自动扫描com/dhcc/ywp/dao/目录下的所有SQL映射的xml文件, 省掉Configuration.xml里的手工配置 -->
         <property name="mapperLocations" value="classpath:com/dhcc/ywp/dao/*.xml" />
     </bean>
     <!-- 配置扫描器 -->
