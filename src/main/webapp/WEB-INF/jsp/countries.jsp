@@ -1,4 +1,4 @@
-<%--
+<%@ page import="org.springframework.web.servlet.DispatcherServlet" %><%--
   Created by IntelliJ IDEA.
   User: cedo
   Date: 2016/11/7
@@ -7,15 +7,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<jsp:useBean id="hello" class="com.dhcc.ywp.service.hello.impl.HelloXXXServiceImpl" />
 <html>
 <head>
     <title>hello,***</title>
 </head>
 <body>
-    <%
-        response.sendRedirect("http://CEDO-PC:8080/index.jsp");
-    %>
+    @Spring MVC<br/>
+    <%=request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE)%>
+    <hr />
+    <%=request.getAttribute("countries") %>
 </body>
 </html>
 

@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<jsp:useBean id="hello" class="com.dhcc.ywp.service.hello.HelloXXXServiceImpl" />
+<jsp:useBean id="hello" class="com.dhcc.ywp.service.hello.impl.HelloXXXServiceImpl" />
 <html>
 <head>
     <title>hello,***</title>

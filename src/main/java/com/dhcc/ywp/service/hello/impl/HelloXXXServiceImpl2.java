@@ -1,4 +1,4 @@
-package com.dhcc.ywp.service.hello;
+package com.dhcc.ywp.service.hello.impl;
 
 import com.dhcc.ywp.service.hello.HelloXXXService;
 

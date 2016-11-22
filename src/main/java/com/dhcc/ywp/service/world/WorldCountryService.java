@@ -1,5 +1,7 @@
 package com.dhcc.ywp.service.world;
 
+import com.dhcc.ywp.po.Country;
+
 import java.util.List;
 
 /**
@@ -8,6 +10,6 @@ import java.util.List;
  */
 public interface WorldCountryService {
 
-    public List<String> allCountry();
+    public List<Country> allCountry();
 
 }

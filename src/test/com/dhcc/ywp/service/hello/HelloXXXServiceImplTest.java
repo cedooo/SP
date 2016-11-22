@@ -8,7 +8,7 @@ import org.junit.Test;
 
 /**
  * Created by cedo on 2016/11/7.
- * test com.dhcc.ywp.service.hello.HelloXXXServiceImpl
+ * test com.dhcc.ywp.service.hello.impl.HelloXXXServiceImpl
  */
 public class HelloXXXServiceImplTest {
 
