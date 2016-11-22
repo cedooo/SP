@@ -7,7 +7,7 @@ package com.dhcc.ywp.po;
 public class Country {
     private String code;
     private String name;
-    private String Ccntinent;
+    private String Continent;
     private String region;
     private String surfaceArea;
     private String indepYear;
@@ -37,12 +37,12 @@ public class Country {
         this.name = name;
     }
 
-    public String getCcntinent() {
-        return Ccntinent;
+    public String getContinent() {
+        return Continent;
     }
 
-    public void setCcntinent(String ccntinent) {
-        Ccntinent = ccntinent;
+    public void setContinent(String continent) {
+        Continent = continent;
     }
 
     public String getRegion() {
@@ -139,5 +139,27 @@ public class Country {
 
     public void setCode2(String code2) {
         this.code2 = code2;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", Continent='" + Continent + '\'' +
+                ", region='" + region + '\'' +
+                ", surfaceArea='" + surfaceArea + '\'' +
+                ", indepYear='" + indepYear + '\'' +
+                ", population='" + population + '\'' +
+                ", lifeExpectancy='" + lifeExpectancy + '\'' +
+                ", GNP='" + GNP + '\'' +
+                ", GNPOld='" + GNPOld + '\'' +
+                ", localName='" + localName + '\'' +
+                ", governmentForm='" + governmentForm + '\'' +
+                ", headOfState='" + headOfState + '\'' +
+                ", capital='" + capital + '\'' +
+                ", code2='" + code2 + '\'' +
+                '}';
     }
 }

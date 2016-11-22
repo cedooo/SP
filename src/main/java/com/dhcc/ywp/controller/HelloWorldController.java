@@ -24,7 +24,7 @@ public class HelloWorldController {
     private HelloXXXService helloService;
     private WorldCountryService worldCountryService;
     @Autowired
-    public void HelloWorldController(@Qualifier("helloService") HelloXXXService helloXXXSerivce,
+    public void HelloWorldController(HelloXXXService helloXXXSerivce,
                                      WorldCountryService worldCountryService){
         helloService = helloXXXSerivce;
         this.worldCountryService = worldCountryService;
@@ -35,7 +35,7 @@ public class HelloWorldController {
         model.addAttribute("message", message);
         return "helloXXX";
     }
-    @RequestMapping("world/countries")
+    @RequestMapping("/world/countries")
     public String worldCountries(Model model){
         List<Country> listCountries = worldCountryService.allCountry();
         model.addAttribute("countries", listCountries);

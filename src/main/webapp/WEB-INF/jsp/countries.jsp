@@ -1,4 +1,5 @@
-<%@ page import="org.springframework.web.servlet.DispatcherServlet" %><%--
+<%@ page import="org.springframework.web.servlet.DispatcherServlet" %>
+<%@ page import="com.dhcc.ywp.po.Country" %><%--
   Created by IntelliJ IDEA.
   User: cedo
   Date: 2016/11/7
@@ -13,7 +14,7 @@
 </head>
 <body>
     @Spring MVC<br/>
-    <%=request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE)%>
+    <%=request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE)    %>
     <hr />
     <%=request.getAttribute("countries") %>
 </body>
