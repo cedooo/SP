@@ -1,5 +1,6 @@
 <%@ page import="org.springframework.web.servlet.DispatcherServlet" %>
-<%@ page import="com.dhcc.ywp.po.Country" %><%--
+<%@ page import="com.dhcc.ywp.po.Country" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: cedo
   Date: 2016/11/7
@@ -16,7 +17,15 @@
     @Spring MVC<br/>
     <%=request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE)    %>
     <hr />
-    <%=request.getAttribute("countries") %>
+    <%
+        List<Country> countries = (List<Country>)request.getAttribute("countries");
+        //countries.forEach(System.out::println);    //JDK8.0+
+        for (int i = 0; i < countries.size(); i++) {
+            out.println(countries.get(i));
+            out.print("<hr />");
+        }
+    %>
+
 </body>
 </html>
 
