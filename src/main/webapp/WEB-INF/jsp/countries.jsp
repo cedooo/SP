@@ -19,11 +19,7 @@
     <hr />
     <%
         List<Country> countries = (List<Country>)request.getAttribute("countries");
-        //countries.forEach(System.out::println);    //JDK8.0+
-        for (int i = 0; i < countries.size(); i++) {
-            out.println(countries.get(i));
-            out.print("<hr />");
-        }
+        countries.forEach(out::println);    //JDK8.0+
     %>
 
 </body>

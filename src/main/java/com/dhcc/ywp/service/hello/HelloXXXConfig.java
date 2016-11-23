@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
  * spring java-annotated configuration
  */
 @Configuration
-@ComponentScan(basePackages = "com.dhcc.ywp.service")
+@ComponentScan(basePackages = "com.dhcc.ywp.service" )
 public class HelloXXXConfig {
 
     /*@Bean
